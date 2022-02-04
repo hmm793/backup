@@ -1,53 +1,37 @@
-<!-- <mat-card class="example-card">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Shiba Inu</mat-card-title>
-    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-  </mat-card-header>
-  <img
-    mat-card-image
-    width="200"
-    src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-    alt="Photo of a Shiba Inu"
-  />
-  <mat-card-content>
-    <h4>Full Name :</h4>
-    {{ studentData.first_name + ' ' + studentData.last_name }}
-    <h4>Gender :</h4>
-    {{ studentData.gender }}
-    <h4>Father Name :</h4>
-    {{ studentData.father_name }}
-    <h4>Mother Name :</h4>
-    {{ studentData.mother_name }}
-    <h4>DoB :</h4>
-    {{ studentData.date_of_birth }}
-    <h4>Father Occupation :</h4>
-    {{ studentData.father_occupation }}
-    <h4>Year Academic :</h4>
-    {{ studentData.year_academic }}
-    <h4>Role :</h4>
-    {{ studentData.role }}
-    <h4>Blood Group :</h4>
-    {{ studentData.blood_group }}
-    <h4>Religion :</h4>
-    {{ studentData.religion }}
-    <h4>Email :</h4>
-    {{ studentData.email }}
-    <h4>Admission Date :</h4>
-    {{ studentData.addmission_date }}
-    <h4>Kelas :</h4>
-    {{ studentData.kelas.class_name }}
-    <h4>Address :</h4>
-    {{ studentData.address }}
-    <h4>Phone :</h4>
-    {{ studentData.phone }}
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-button [routerLink]="">Edit</button>
-    <button mat-button>SHARE</button>
-  </mat-card-actions>
-</mat-card> -->
 
+<section class="statis mt-4 text-center">
+  <div class="row">
+    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+      <div class="box bg-cards p-auto">
+        <i class="uil-eye"></i>
+        <h3 class="text-cards">{{studentData.first_name + " " + studentData.last_name}}</h3>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-9 mb-4 mb-lg-0">
+      <div class="box bg-cards p-3 mb-3">
+        <i class="uil-eye"></i>
+        <h3 class="text-cards">Student Detail Info</h3>
+        <div class="lead text-cards">
+          <table>
+            <tbody>
+              <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td>{{studentData._id}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- 
 <div class="title-profil">
   <p>Student Profile</p>
 </div>
@@ -145,4 +129,6 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
+
+

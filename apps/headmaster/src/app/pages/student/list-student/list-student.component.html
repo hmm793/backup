@@ -1,5 +1,5 @@
 <mat-tab-group>
-  <mat-tab label="percobaan">
+  <mat-tab label="All Students">
     <section class="statis mt-4 text-center" >
       <div class="row" >
         <div class="col-md-6 col-lg-3 mb-4 mb-lg-0" *ngFor="let data of allStudent">
@@ -8,7 +8,7 @@
             <h3 class="text-cards">{{data.first_name + " " + data.last_name}}</h3>
             <img class="img-thumbnail rounded-circle" src="https://genshin-impact.gamefever.co.id/wp-content/uploads/2021/03/Character_Zhongli.png" >
             <div class="lead text-cards">
-              <table class="table table-dark table-stripped">
+              <table class="table table-dark table-stripped text-cards">
                 <tbody>
                   <tr>
                     <th>Status</th>
@@ -36,7 +36,7 @@
     </section>
 
   </mat-tab>
-  <mat-tab label="All Students">
+  <!-- <mat-tab label="All Students">
     <div class="box-list">
       <div class="title">
         <div class="head"><p>All Student</p></div>
@@ -73,9 +73,9 @@
         </tr>
       </mat-expansion-panel>
     </div>
-  </mat-tab>
+  </mat-tab> -->
 
-  <mat-tab label="{{ kls?.class_name }}" *ngFor="let kls of kelas">
+  <mat-tab label=" Kelas {{ kls?.class_name }}" *ngFor="let kls of kelas">
     <div class="box-kelas">
       <headmaster-student-by-class
         [parentData]="kls?._id"
