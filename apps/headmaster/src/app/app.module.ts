@@ -63,6 +63,7 @@ import { AddClassComponent } from './pages/add-class/add-class.component';
 import { ClassByScoreComponent } from './pages/class-by-score/class-by-score.component';
 import { StudentByClassComponent } from './pages/student-by-class/student-by-class.component';
 import { RankByClassComponent } from './pages/rank-by-class/rank-by-class.component';
+import { SetPasswordComponent } from './pages/set-password/set-password.component';
 // Akhir Component
 
 // Routes
@@ -167,6 +168,7 @@ FullCalendarModule.registerPlugins([
     ClassByScoreComponent,
     StudentByClassComponent,
     RankByClassComponent,
+    SetPasswordComponent,
   ],
   imports: [
     BrowserModule,
