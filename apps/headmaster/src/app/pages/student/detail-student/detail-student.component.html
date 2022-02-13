@@ -1,53 +1,116 @@
-<!-- <mat-card class="example-card">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Shiba Inu</mat-card-title>
-    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-  </mat-card-header>
-  <img
-    mat-card-image
-    width="200"
-    src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-    alt="Photo of a Shiba Inu"
-  />
-  <mat-card-content>
-    <h4>Full Name :</h4>
-    {{ studentData.first_name + ' ' + studentData.last_name }}
-    <h4>Gender :</h4>
-    {{ studentData.gender }}
-    <h4>Father Name :</h4>
-    {{ studentData.father_name }}
-    <h4>Mother Name :</h4>
-    {{ studentData.mother_name }}
-    <h4>DoB :</h4>
-    {{ studentData.date_of_birth }}
-    <h4>Father Occupation :</h4>
-    {{ studentData.father_occupation }}
-    <h4>Year Academic :</h4>
-    {{ studentData.year_academic }}
-    <h4>Role :</h4>
-    {{ studentData.role }}
-    <h4>Blood Group :</h4>
-    {{ studentData.blood_group }}
-    <h4>Religion :</h4>
-    {{ studentData.religion }}
-    <h4>Email :</h4>
-    {{ studentData.email }}
-    <h4>Admission Date :</h4>
-    {{ studentData.addmission_date }}
-    <h4>Kelas :</h4>
-    {{ studentData.kelas.class_name }}
-    <h4>Address :</h4>
-    {{ studentData.address }}
-    <h4>Phone :</h4>
-    {{ studentData.phone }}
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-button [routerLink]="">Edit</button>
-    <button mat-button>SHARE</button>
-  </mat-card-actions>
-</mat-card> -->
 
+<section class="statis mt-4 text-center">
+  <div class="row">
+    <div class="col-md-6 col-lg-3 mb-4 mb-lg-5">
+      <div class="box bg-cards p-auto">
+        <i class="uil-eye"></i>
+        <h3 class="text-cards">Profile</h3>
+        <img src="https://i.pinimg.com/originals/e4/90/23/e49023d4e68ff51a8b5cf2c1d80100e2.jpg" class="img-thumbnail">
+        <h5 class="text-cards">{{studentData.first_name + " " + studentData.last_name}}</h5>
+        <hr>
+        <p class="text-cards">{{studentData.short_bio}}</p>
+        <div class="d-grid gap-2 mt-2">
+          <button routerLink="/studentedit/{{studentData._id}}" class="btn btn-secondary btn-lg">Edit</button>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-9 mb-4 mb-lg-0">
+      <div class="box bg-cards p-3 mb-3">
+        <i class="uil-eye"></i>
+        <h3 class="text-cards">Student Detail Info</h3>
+        <div class="m-2 mt-5 rounded border">
+          <table class="table-dark table">
+            <tbody>
+              <tr>
+                <td>Student Id</td>
+                <td>:</td>
+                <td>{{studentData._id}}</td>
+              </tr>
+              <tr>
+                <td>Kelas</td>
+                <td>:</td>
+                <td>{{"Kelas " + studentData.kelas.class_name}}</td>
+              </tr>
+              <tr>
+                <td>Gender</td>
+                <td>:</td>
+                <td>{{studentData.gender}}</td>
+              </tr>
+              <tr>
+                <td>Father Name</td>
+                <td>:</td>
+                <td>{{studentData.father_name}}</td>
+              </tr>
+              <tr>
+                <td>Mother Name</td>
+                <td>:</td>
+                <td>{{studentData.mother_name}}</td>
+              </tr>
+              <tr>
+                <td>Date Of Birth</td>
+                <td>:</td>
+                <td>{{studentData.date_of_birth}}</td>
+              </tr>
+              <tr>
+                <td>Father Occupation</td>
+                <td>:</td>
+                <td>{{studentData.father_occupation}}</td>
+              </tr>
+              <tr>
+                <td>Blood Group</td>
+                <td>:</td>
+                <td>{{studentData.blood_group}}</td>
+              </tr>
+              <tr>
+                <td>Religion</td>
+                <td>:</td>
+                <td>{{studentData.religion}}</td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td>{{studentData.email}}</td>
+              </tr>
+              <tr>
+                <td>Year Academic</td>
+                <td>:</td>
+                <td>{{studentData.year_academic}}</td>
+              </tr>
+              <tr>
+                <td>Addmission Date</td>
+                <td>:</td>
+                <td>{{studentData.addmission_date}}</td>
+              </tr>
+              <tr>
+                <td>Address</td>
+                <td>:</td>
+                <td>{{studentData.address}}</td>
+              </tr>
+              <tr>
+                <td>Phone</td>
+                <td>:</td>
+                <td>{{studentData.phone}}</td>
+              </tr>
+              <tr>
+                <td>Status</td>
+                <td>:</td>
+                <td>{{studentData.status}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- 
 <div class="title-profil">
   <p>Student Profile</p>
 </div>
@@ -145,4 +208,6 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
+
+

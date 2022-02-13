@@ -1,4 +1,4 @@
-table {
+/* table {
   margin-top: 50px;
   margin: 0 auto;
 }
@@ -70,12 +70,15 @@ form {
 }
 .box-list {
   border: 1px solid #656565;
-  width: 100vh;
+  width: 150vh;
   margin: 0 auto;
   margin-top: 20px;
   border-radius: 10px;
   background: #00000014;
   padding: 10px;
+  background-color: #31353D;
+  color: lightgray;
+  
 }
 .box-kelas {
   border: 1px solid #656565;
@@ -94,4 +97,85 @@ form {
   background: #007740;
   color: white;
   margin-left: 10px;
+}
+
+.main-color {
+	color: #ffc107
+}
+
+.bg-cards {
+  background-color: #31353D;
+}
+
+.text-cards {
+  color: lightgray;
+}
+
+.chart-box {
+  text-align: -webkit-center;
+  margin: 20px;
+}
+
+.expansion-panel {
+  position: relative;
+  border-radius: 40px;
+  background-color: #31353d;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
+  margin: -30;
+} */
+
+.statis {
+	color: var(--dk-gray-100);
+  width: 100%;
+}
+
+.statis .box {
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+  
+}
+
+.statis .box h3:after {
+	content: "";
+	height: 2px;
+	width: 70%;
+	margin: auto;
+	background-color: rgba(255, 255, 255, 0.12);
+	display: block;
+	margin-top: 10px;
+}
+
+.statis .box i {
+	position: absolute;
+	height: 70px;
+	width: 70px;
+	font-size: 22px;
+	padding: 15px;
+	top: -25px;
+	left: -25px;
+	background-color: rgba(255, 255, 255, 0.15);
+	line-height: 60px;
+	text-align: right;
+	border-radius: 50%;
+}
+
+.main-color {
+	color: #ffc107
+}
+
+.bg-cards {
+  background-color: #31353D;
+}
+
+.text-cards {
+  color: lightgray;
+  font-size: 20px;
+}
+
+.chart-box {
+  text-align: -webkit-center;
+  margin: 20px;
 }
